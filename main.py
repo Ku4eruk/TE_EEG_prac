@@ -5,7 +5,6 @@ import random
 import scipy.signal
 import pprint
 import matplotlib.pyplot as plt
-from test import viz_one_head
 from matplotlib import cm
 from freq_lib import sign_1
 from copent import transent, ci
@@ -102,6 +101,6 @@ print(ch_names)
 # te_2 = transent(signals[0], signals[1], mode=2)
 # print(te_2)
 print(time.time())
-te_3 = te_calc(signals[0][:10000], signals[1][:10000])
+te_3 = te_calc(signals[0][:100], signals[1][:100])
 print(te_3)
 print(time.time())
